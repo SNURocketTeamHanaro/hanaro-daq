@@ -1,0 +1,720 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:hanaro
+LIBS:sensor-transducer-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R2
+U 1 1 5B514D41
+P 2850 1400
+F 0 "R2" V 2930 1400 50  0000 C CNN
+F 1 "R" V 2850 1400 50  0000 C CNN
+F 2 "Hanaro:Register.Cement.Square.Large" V 2780 1400 50  0001 C CNN
+F 3 "" H 2850 1400 50  0001 C CNN
+	1    2850 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5B514D7A
+P 2850 2300
+F 0 "R3" V 2930 2300 50  0000 C CNN
+F 1 "R" V 2850 2300 50  0000 C CNN
+F 2 "Hanaro:Register.Cement.Square.Large" V 2780 2300 50  0001 C CNN
+F 3 "" H 2850 2300 50  0001 C CNN
+	1    2850 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5B514DA5
+P 3200 1950
+F 0 "R4" V 3280 1950 50  0000 C CNN
+F 1 "R" V 3200 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3130 1950 50  0001 C CNN
+F 3 "" H 3200 1950 50  0001 C CNN
+	1    3200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5B514E04
+P 3450 2850
+F 0 "R5" V 3530 2850 50  0000 C CNN
+F 1 "R" V 3450 2850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3380 2850 50  0001 C CNN
+F 3 "" H 3450 2850 50  0001 C CNN
+	1    3450 2850
+	1    0    0    -1  
+$EndComp
+Text Label 2500 3250 2    60   ~ 0
+GND
+Text Label 900  1050 2    60   ~ 0
+PS1+
+Text Label 2350 1250 2    60   ~ 0
+PS1-
+Text Label 900  1250 2    60   ~ 0
+PS2+
+Text Label 2350 2150 2    60   ~ 0
+PS2-
+Text Label 900  850  2    60   ~ 0
+24V+
+Text Label 1800 1950 2    60   ~ 0
+12V+
+Text Label 1400 1950 2    60   ~ 0
+5V+
+Text Label 1000 1950 2    60   ~ 0
+5V-
+$Comp
+L AD620 U5
+U 1 1 5B51558E
+P 3250 4000
+F 0 "U5" H 3400 4300 50  0000 C CNN
+F 1 "AD620" H 3400 4200 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 3250 4000 50  0001 C CNN
+F 3 "" H 3250 4000 50  0001 C CNN
+	1    3250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Variable R1
+U 1 1 5B5155B7
+P 2550 4000
+F 0 "R1" V 2650 3900 50  0000 L CNN
+F 1 "R_Variable" V 2450 3950 50  0000 L CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3266W" V 2480 4000 50  0001 C CNN
+F 3 "" H 2550 4000 50  0001 C CNN
+	1    2550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U9
+U 1 1 5B51561E
+P 5150 1750
+F 0 "U9" H 5150 1950 50  0000 L CNN
+F 1 "LM324" H 5150 1550 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 5100 1850 50  0001 C CNN
+F 3 "" H 5200 1950 50  0001 C CNN
+	1    5150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U9
+U 2 1 5B51564D
+P 5150 2550
+F 0 "U9" H 5150 2750 50  0000 L CNN
+F 1 "LM324" H 5150 2350 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 5100 2650 50  0001 C CNN
+F 3 "" H 5200 2750 50  0001 C CNN
+	2    5150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U9
+U 3 1 5B51569A
+P 5150 3300
+F 0 "U9" H 5150 3500 50  0000 L CNN
+F 1 "LM324" H 5150 3100 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 5100 3400 50  0001 C CNN
+F 3 "" H 5200 3500 50  0001 C CNN
+	3    5150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U9
+U 4 1 5B5156DF
+P 5150 4050
+F 0 "U9" H 5150 4250 50  0000 L CNN
+F 1 "LM324" H 5150 3850 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 5100 4150 50  0001 C CNN
+F 3 "" H 5200 4250 50  0001 C CNN
+	4    5150 4050
+	1    0    0    -1  
+$EndComp
+Text Label 5050 4500 3    60   ~ 0
+GND
+Text Label 5050 1300 1    60   ~ 0
+12V+
+Text Label 700  1950 2    60   ~ 0
+GND
+$Comp
+L GND #PWR01
+U 1 1 5B516F5F
+P 700 2100
+F 0 "#PWR01" H 700 1850 50  0001 C CNN
+F 1 "GND" H 700 1950 50  0000 C CNN
+F 2 "" H 700 2100 50  0001 C CNN
+F 3 "" H 700 2100 50  0001 C CNN
+	1    700  2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR02
+U 1 1 5B517159
+P 1800 1750
+F 0 "#PWR02" H 1800 1600 50  0001 C CNN
+F 1 "+12V" H 1800 1890 50  0000 C CNN
+F 2 "" H 1800 1750 50  0001 C CNN
+F 3 "" H 1800 1750 50  0001 C CNN
+	1    1800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 5B517185
+P 1400 1750
+F 0 "#PWR03" H 1400 1600 50  0001 C CNN
+F 1 "+5V" H 1400 1890 50  0000 C CNN
+F 2 "" H 1400 1750 50  0001 C CNN
+F 3 "" H 1400 1750 50  0001 C CNN
+	1    1400 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L -9VA #PWR04
+U 1 1 5B5171B1
+P 1000 1750
+F 0 "#PWR04" H 1000 1625 50  0001 C CNN
+F 1 "-9VA" H 1000 1900 50  0000 C CNN
+F 2 "" H 1000 1750 50  0001 C CNN
+F 3 "" H 1000 1750 50  0001 C CNN
+	1    1000 1750
+	1    0    0    -1  
+$EndComp
+Text Label 1350 4250 2    60   ~ 0
+LCPow+
+Text Label 1350 4400 2    60   ~ 0
+LCShunt
+Text Label 1350 4550 2    60   ~ 0
+LCPow-
+Text Label 1350 3800 2    60   ~ 0
+LCSig-
+Text Label 1350 4000 2    60   ~ 0
+LCSig+
+Text Label 1700 4400 0    60   ~ 0
+GND
+Text Label 1700 4250 0    60   ~ 0
+12V+
+Text Label 3150 3550 1    60   ~ 0
+5V+
+Text Label 3150 4450 3    60   ~ 0
+5V-
+Text Label 3350 4450 3    60   ~ 0
+AD620Ref
+Text Label 5650 3300 0    60   ~ 0
+AD620Ref
+Text Label 4300 2800 2    60   ~ 0
+5V+
+Text Label 4300 3600 2    60   ~ 0
+GND
+$Comp
+L R R6
+U 1 1 5B51C99E
+P 4300 3000
+F 0 "R6" V 4380 3000 50  0000 C CNN
+F 1 "R" V 4300 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4230 3000 50  0001 C CNN
+F 3 "" H 4300 3000 50  0001 C CNN
+	1    4300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 5B51C9FC
+P 4300 3400
+F 0 "R7" V 4380 3400 50  0000 C CNN
+F 1 "R" V 4300 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4230 3400 50  0001 C CNN
+F 3 "" H 4300 3400 50  0001 C CNN
+	1    4300 3400
+	1    0    0    -1  
+$EndComp
+Text Label 5850 1750 0    60   ~ 0
+PS1out
+Text Label 5850 2550 0    60   ~ 0
+PS2out
+Text Label 4050 4000 0    60   ~ 0
+LCout
+$Comp
+L Conn3 U10
+U 1 1 5B57E5B5
+P 7050 1950
+F 0 "U10" H 6950 1600 60  0000 C CNN
+F 1 "Conn3" H 7050 2300 60  0000 C CNN
+F 2 "Hanaro:Connector.3pin" H 6850 2100 60  0001 C CNN
+F 3 "" H 6850 2100 60  0001 C CNN
+	1    7050 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3250 3450 3250
+Wire Wire Line
+	3450 3250 3450 3000
+Wire Wire Line
+	3200 2100 3200 3250
+Connection ~ 3200 3250
+Wire Wire Line
+	3200 1750 3200 1800
+Wire Wire Line
+	3450 2650 3450 2700
+Wire Wire Line
+	3450 2300 3450 2350
+Wire Wire Line
+	3000 2300 4700 2300
+Wire Wire Line
+	3000 1400 4700 1400
+Wire Wire Line
+	3200 1400 3200 1450
+Wire Wire Line
+	2700 2300 2650 2300
+Wire Wire Line
+	2650 1400 2650 3250
+Connection ~ 2650 3250
+Wire Wire Line
+	2700 1400 2650 1400
+Connection ~ 2650 2300
+Wire Wire Line
+	900  850  1000 850 
+Wire Wire Line
+	1000 850  1000 1250
+Wire Wire Line
+	1000 1050 900  1050
+Wire Wire Line
+	1000 1250 900  1250
+Connection ~ 1000 1050
+Connection ~ 3050 1400
+Wire Wire Line
+	2350 1250 3050 1250
+Wire Wire Line
+	3050 1250 3050 1400
+Wire Wire Line
+	2350 2150 3050 2150
+Wire Wire Line
+	3050 2150 3050 2300
+Connection ~ 3050 2300
+Wire Wire Line
+	5050 4500 5050 4350
+Wire Wire Line
+	5050 1300 5050 1450
+Wire Wire Line
+	700  1750 700  2100
+Wire Wire Line
+	1000 1750 1000 1950
+Wire Wire Line
+	1400 1750 1400 1950
+Wire Wire Line
+	1800 1750 1800 1950
+Wire Wire Line
+	1350 4250 1700 4250
+Wire Wire Line
+	1350 4400 1700 4400
+Wire Wire Line
+	1350 4550 1450 4550
+Wire Wire Line
+	1450 4550 1450 4400
+Connection ~ 1450 4400
+Wire Wire Line
+	2550 3850 2550 3800
+Wire Wire Line
+	2550 3800 2700 3800
+Wire Wire Line
+	2700 3800 2700 3900
+Wire Wire Line
+	2700 3900 2850 3900
+Wire Wire Line
+	2550 4150 2550 4200
+Wire Wire Line
+	2550 4200 2700 4200
+Wire Wire Line
+	2700 4200 2700 4100
+Wire Wire Line
+	2700 4100 2850 4100
+Wire Wire Line
+	2850 3800 2800 3800
+Wire Wire Line
+	2800 3800 2800 3650
+Wire Wire Line
+	2800 3650 2350 3650
+Wire Wire Line
+	2350 3650 2350 3800
+Wire Wire Line
+	2350 3800 1350 3800
+Wire Wire Line
+	2850 4200 2800 4200
+Wire Wire Line
+	2800 4200 2800 4250
+Wire Wire Line
+	2800 4250 2350 4250
+Wire Wire Line
+	2350 4250 2350 4000
+Wire Wire Line
+	2350 4000 1350 4000
+Wire Wire Line
+	3150 3550 3150 3700
+Wire Wire Line
+	3150 4300 3150 4450
+Wire Wire Line
+	3350 4450 3350 4300
+Wire Wire Line
+	4850 1850 4800 1850
+Wire Wire Line
+	4800 1850 4800 2100
+Wire Wire Line
+	4800 2100 5500 2100
+Wire Wire Line
+	5500 2100 5500 1750
+Wire Wire Line
+	5450 1750 5850 1750
+Wire Wire Line
+	4850 2650 4800 2650
+Wire Wire Line
+	4800 2650 4800 2900
+Wire Wire Line
+	4800 2900 5500 2900
+Wire Wire Line
+	5500 2900 5500 2550
+Wire Wire Line
+	5450 2550 5850 2550
+Wire Wire Line
+	4850 3400 4800 3400
+Wire Wire Line
+	4800 3400 4800 3650
+Wire Wire Line
+	4800 3650 5500 3650
+Wire Wire Line
+	5500 3650 5500 3300
+Wire Wire Line
+	5450 3300 5650 3300
+Wire Wire Line
+	4850 4150 4800 4150
+Wire Wire Line
+	4800 4150 4800 4400
+Wire Wire Line
+	4800 4400 5500 4400
+Wire Wire Line
+	5500 4400 5500 4050
+Wire Wire Line
+	5500 4050 5450 4050
+Wire Wire Line
+	4700 1400 4700 1650
+Wire Wire Line
+	4700 1650 4850 1650
+Connection ~ 3200 1400
+Wire Wire Line
+	4700 2300 4700 2450
+Wire Wire Line
+	4700 2450 4850 2450
+Connection ~ 3450 2300
+Connection ~ 5500 3300
+Wire Wire Line
+	4300 2800 4300 2850
+Wire Wire Line
+	4300 3150 4300 3250
+Wire Wire Line
+	4300 3550 4300 3600
+Wire Wire Line
+	4300 3200 4850 3200
+Connection ~ 4300 3200
+Connection ~ 5500 1750
+Connection ~ 5500 2550
+Wire Wire Line
+	4050 4000 3650 4000
+$Comp
+L Conn2 U1
+U 1 1 5B57EA8A
+P 1750 5000
+F 0 "U1" H 1650 4750 60  0000 C CNN
+F 1 "Conn2" H 1750 5250 60  0000 C CNN
+F 2 "Hanaro:Connector.2pin" H 1750 5050 60  0001 C CNN
+F 3 "" H 1750 5050 60  0001 C CNN
+	1    1750 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn2 U2
+U 1 1 5B57EFB1
+P 1750 5600
+F 0 "U2" H 1650 5350 60  0000 C CNN
+F 1 "Conn2" H 1750 5850 60  0000 C CNN
+F 2 "Hanaro:Connector.2pin" H 1750 5650 60  0001 C CNN
+F 3 "" H 1750 5650 60  0001 C CNN
+	1    1750 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn2 U3
+U 1 1 5B57F026
+P 1750 6200
+F 0 "U3" H 1650 5950 60  0000 C CNN
+F 1 "Conn2" H 1750 6450 60  0000 C CNN
+F 2 "Hanaro:Connector.2pin" H 1750 6250 60  0001 C CNN
+F 3 "" H 1750 6250 60  0001 C CNN
+	1    1750 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn3 U4
+U 1 1 5B57F085
+P 1750 6900
+F 0 "U4" H 1650 6550 60  0000 C CNN
+F 1 "Conn3" H 1750 7250 60  0000 C CNN
+F 2 "Hanaro:Connector.3pin" H 1550 7050 60  0001 C CNN
+F 3 "" H 1550 7050 60  0001 C CNN
+	1    1750 6900
+	-1   0    0    1   
+$EndComp
+Text Label 2200 5100 0    60   ~ 0
+PS1+
+Text Label 2200 4900 0    60   ~ 0
+PS1-
+Text Label 2200 5700 0    60   ~ 0
+PS2+
+Text Label 2200 5500 0    60   ~ 0
+PS2-
+Text Label 2200 6100 0    60   ~ 0
+LCSig+
+Text Label 2200 6300 0    60   ~ 0
+LCSig-
+Text Label 2200 7100 0    60   ~ 0
+LCPow+
+Text Label 2200 6900 0    60   ~ 0
+LCPow-
+Text Label 2200 6700 0    60   ~ 0
+LCShunt
+Wire Wire Line
+	2200 6300 2100 6300
+Wire Wire Line
+	2100 6100 2200 6100
+Wire Wire Line
+	2200 6700 2100 6700
+Wire Wire Line
+	2100 6900 2200 6900
+Wire Wire Line
+	2200 7100 2100 7100
+Wire Wire Line
+	2100 5700 2200 5700
+Wire Wire Line
+	2100 5500 2200 5500
+Wire Wire Line
+	2100 5100 2200 5100
+Wire Wire Line
+	2200 4900 2100 4900
+$Comp
+L Conn3 U8
+U 1 1 5B580098
+P 3650 6900
+F 0 "U8" H 3550 6550 60  0000 C CNN
+F 1 "Conn3" H 3650 7250 60  0000 C CNN
+F 2 "Hanaro:Connector.3pin" H 3450 7050 60  0001 C CNN
+F 3 "" H 3450 7050 60  0001 C CNN
+	1    3650 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn2 U7
+U 1 1 5B580119
+P 3650 6200
+F 0 "U7" H 3550 5950 60  0000 C CNN
+F 1 "Conn2" H 3650 6450 60  0000 C CNN
+F 2 "Hanaro:Connector.2pin" H 3650 6250 60  0001 C CNN
+F 3 "" H 3650 6250 60  0001 C CNN
+	1    3650 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn2 U6
+U 1 1 5B5801BA
+P 3650 5600
+F 0 "U6" H 3550 5350 60  0000 C CNN
+F 1 "Conn2" H 3650 5850 60  0000 C CNN
+F 2 "Hanaro:Connector.2pin" H 3650 5650 60  0001 C CNN
+F 3 "" H 3650 5650 60  0001 C CNN
+	1    3650 5600
+	-1   0    0    1   
+$EndComp
+Text Label 4100 7100 0    60   ~ 0
+5V+
+Text Label 4100 6900 0    60   ~ 0
+GND
+Text Label 4100 6700 0    60   ~ 0
+5V-
+Text Label 4100 6300 0    60   ~ 0
+12V+
+Text Label 4100 6100 0    60   ~ 0
+GND
+Text Label 4100 5700 0    60   ~ 0
+24V+
+Text Label 4100 5500 0    60   ~ 0
+GND
+Wire Wire Line
+	4000 5500 4100 5500
+Wire Wire Line
+	4100 5700 4000 5700
+Wire Wire Line
+	4000 6100 4100 6100
+Wire Wire Line
+	4100 6300 4000 6300
+Wire Wire Line
+	4000 6700 4100 6700
+Wire Wire Line
+	4100 6900 4000 6900
+Wire Wire Line
+	4000 7100 4100 7100
+Text Label 6600 1750 2    60   ~ 0
+PS1out
+Text Label 6600 1950 2    60   ~ 0
+PS2out
+Text Label 6600 2150 2    60   ~ 0
+LCout
+Wire Wire Line
+	6600 2150 6700 2150
+Wire Wire Line
+	6700 1950 6600 1950
+Wire Wire Line
+	6600 1750 6700 1750
+$Comp
+L CP1 C1
+U 1 1 5B581369
+P 3200 1600
+F 0 "C1" H 3225 1700 50  0000 L CNN
+F 1 "CP1" H 3225 1500 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 3200 1600 50  0001 C CNN
+F 3 "" H 3200 1600 50  0001 C CNN
+	1    3200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 5B5813E4
+P 3450 2500
+F 0 "C2" H 3475 2600 50  0000 L CNN
+F 1 "CP1" H 3475 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 3450 2500 50  0001 C CNN
+F 3 "" H 3450 2500 50  0001 C CNN
+	1    3450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 5B58166D
+P 1800 1950
+F 0 "#FLG05" H 1800 2025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 2100 50  0000 C CNN
+F 2 "" H 1800 1950 50  0001 C CNN
+F 3 "" H 1800 1950 50  0001 C CNN
+	1    1800 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 5B5816AD
+P 1400 1950
+F 0 "#FLG06" H 1400 2025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1400 2100 50  0000 C CNN
+F 2 "" H 1400 1950 50  0001 C CNN
+F 3 "" H 1400 1950 50  0001 C CNN
+	1    1400 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 5B5816ED
+P 1000 1950
+F 0 "#FLG07" H 1000 2025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1000 2100 50  0000 C CNN
+F 2 "" H 1000 1950 50  0001 C CNN
+F 3 "" H 1000 1950 50  0001 C CNN
+	1    1000 1950
+	-1   0    0    1   
+$EndComp
+Text Label 4800 3950 2    60   ~ 0
+floating
+Wire Wire Line
+	4600 3950 4850 3950
+$Comp
+L PWR_FLAG #FLG08
+U 1 1 5B581E90
+P 700 1750
+F 0 "#FLG08" H 700 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 700 1900 50  0000 C CNN
+F 2 "" H 700 1750 50  0001 C CNN
+F 3 "" H 700 1750 50  0001 C CNN
+	1    700  1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C3
+U 1 1 5B5825A2
+P 3800 4250
+F 0 "C3" H 3825 4350 50  0000 L CNN
+F 1 "CP1" H 3825 4150 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x10" H 3800 4250 50  0001 C CNN
+F 3 "" H 3800 4250 50  0001 C CNN
+	1    3800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4100 3800 4000
+Connection ~ 3800 4000
+Text Label 3800 4500 3    60   ~ 0
+GND
+Wire Wire Line
+	3800 4400 3800 4500
+$Comp
+L PWR_FLAG #FLG09
+U 1 1 5B582FAE
+P 4600 3750
+F 0 "#FLG09" H 4600 3825 50  0001 C CNN
+F 1 "PWR_FLAG" H 4600 3900 50  0000 C CNN
+F 2 "" H 4600 3750 50  0001 C CNN
+F 3 "" H 4600 3750 50  0001 C CNN
+	1    4600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3750 4600 3950
+$EndSCHEMATC

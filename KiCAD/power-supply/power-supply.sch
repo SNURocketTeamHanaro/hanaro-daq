@@ -1,0 +1,713 @@
+EESchema Schematic File Version 2
+LIBS:power-supply-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:hanaro
+LIBS:power-supply-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L L7805 U1
+U 1 1 5B51377D
+P 3750 1200
+F 0 "U1" H 3600 1325 50  0000 C CNN
+F 1 "L7805" H 3750 1325 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 3775 1050 50  0001 L CIN
+F 3 "" H 3750 1150 50  0001 C CNN
+	1    3750 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L L7905 U2
+U 1 1 5B5137C4
+P 3750 3050
+F 0 "U2" H 3600 2925 50  0000 C CNN
+F 1 "L7905" H 3750 2925 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 3750 2850 50  0001 C CIN
+F 3 "" H 3750 3050 50  0001 C CNN
+	1    3750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C3
+U 1 1 5B51389C
+P 3350 1750
+F 0 "C3" H 3375 1850 50  0000 L CNN
+F 1 "CP1" H 3375 1650 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 3350 1750 50  0001 C CNN
+F 3 "" H 3350 1750 50  0001 C CNN
+	1    3350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C4
+U 1 1 5B513924
+P 3350 2450
+F 0 "C4" H 3375 2550 50  0000 L CNN
+F 1 "CP1" H 3375 2350 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-C_EIA-6032-28_Hand" H 3350 2450 50  0001 C CNN
+F 3 "" H 3350 2450 50  0001 C CNN
+	1    3350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C6
+U 1 1 5B513961
+P 4100 2450
+F 0 "C6" H 4125 2550 50  0000 L CNN
+F 1 "CP1" H 4125 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 4100 2450 50  0001 C CNN
+F 3 "" H 4100 2450 50  0001 C CNN
+	1    4100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 5B513E8F
+P 3100 1750
+F 0 "C1" H 3125 1850 50  0000 L CNN
+F 1 "CP1" H 3125 1650 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D18.0mm_P7.50mm" H 3100 1750 50  0001 C CNN
+F 3 "" H 3100 1750 50  0001 C CNN
+	1    3100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 5B513EDC
+P 3100 2450
+F 0 "C2" H 3125 2550 50  0000 L CNN
+F 1 "CP1" H 3125 2350 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D18.0mm_P7.50mm" H 3100 2450 50  0001 C CNN
+F 3 "" H 3100 2450 50  0001 C CNN
+	1    3100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5B513FDF
+P 1700 2300
+F 0 "#PWR01" H 1700 2050 50  0001 C CNN
+F 1 "GND" H 1700 2150 50  0000 C CNN
+F 2 "" H 1700 2300 50  0001 C CNN
+F 3 "" H 1700 2300 50  0001 C CNN
+	1    1700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM1085-12 U4
+U 1 1 5B51501F
+P 6750 1200
+F 0 "U4" H 6600 1325 50  0000 C CNN
+F 1 "LM1085-12" H 6750 1325 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 6750 1450 50  0001 C CIN
+F 3 "" H 6750 1200 50  0001 C CNN
+	1    6750 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L BoostConv U3
+U 1 1 5B5150F3
+P 5150 1300
+F 0 "U3" H 4950 1050 60  0000 C CNN
+F 1 "BoostConv" H 5150 1550 60  0000 C CNN
+F 2 "Hanaro:Boost.Conv" H 5150 1300 60  0001 C CNN
+F 3 "" H 5150 1300 60  0001 C CNN
+	1    5150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L L7809 U5
+U 1 1 5B515EDC
+P 8000 1200
+F 0 "U5" H 7850 1325 50  0000 C CNN
+F 1 "L7809" H 8000 1325 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 8025 1050 50  0001 L CIN
+F 3 "" H 8000 1150 50  0001 C CNN
+	1    8000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C7
+U 1 1 5B51626E
+P 6400 1700
+F 0 "C7" H 6425 1800 50  0000 L CNN
+F 1 "CP1" H 6425 1600 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 6400 1700 50  0001 C CNN
+F 3 "" H 6400 1700 50  0001 C CNN
+	1    6400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C8
+U 1 1 5B5162B9
+P 7400 1700
+F 0 "C8" H 7425 1800 50  0000 L CNN
+F 1 "CP1" H 7425 1600 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-C_EIA-6032-28_Hand" H 7400 1700 50  0001 C CNN
+F 3 "" H 7400 1700 50  0001 C CNN
+	1    7400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C9
+U 1 1 5B516314
+P 7650 1700
+F 0 "C9" H 7675 1800 50  0000 L CNN
+F 1 "CP1" H 7675 1600 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 7650 1700 50  0001 C CNN
+F 3 "" H 7650 1700 50  0001 C CNN
+	1    7650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C10
+U 1 1 5B51636B
+P 8650 1700
+F 0 "C10" H 8675 1800 50  0000 L CNN
+F 1 "CP1" H 8675 1600 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-C_EIA-6032-28_Hand" H 8650 1700 50  0001 C CNN
+F 3 "" H 8650 1700 50  0001 C CNN
+	1    8650 1700
+	1    0    0    -1  
+$EndComp
+Text Label 1500 2150 2    60   ~ 0
+GNDIn
+Text Label 1500 3150 2    60   ~ 0
+V-7.4in
+Text Label 9300 1000 0    60   ~ 0
+V24out
+Text Label 9300 1200 0    60   ~ 0
+V24GNDout
+Text Label 9300 1700 0    60   ~ 0
+V12GNDout
+Text Label 9300 2050 0    60   ~ 0
+V9out
+Text Label 9300 2250 0    60   ~ 0
+V9GNDout
+Text Label 9300 2650 0    60   ~ 0
+V5out
+Text Label 9300 2850 0    60   ~ 0
+V5GNDout
+Text Label 9300 3050 0    60   ~ 0
+V-5out
+Text Label 1650 1300 2    60   ~ 0
+Floating1
+Text Label 1650 2950 2    60   ~ 0
+Floating2
+$Comp
+L VSS #PWR02
+U 1 1 5B51A2FD
+P 1600 3450
+F 0 "#PWR02" H 1600 3300 50  0001 C CNN
+F 1 "VSS" H 1600 3600 50  0000 C CNN
+F 2 "" H 1600 3450 50  0001 C CNN
+F 3 "" H 1600 3450 50  0001 C CNN
+	1    1600 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L VDD #PWR03
+U 1 1 5B51A602
+P 1600 750
+F 0 "#PWR03" H 1600 600 50  0001 C CNN
+F 1 "VDD" H 1600 900 50  0000 C CNN
+F 2 "" H 1600 750 50  0001 C CNN
+F 3 "" H 1600 750 50  0001 C CNN
+	1    1600 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 5B51A92D
+P 800 1350
+F 0 "#FLG04" H 800 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 800 1500 50  0000 C CNN
+F 2 "" H 800 1350 50  0001 C CNN
+F 3 "" H 800 1350 50  0001 C CNN
+	1    800  1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 5B51A963
+P 800 2000
+F 0 "#FLG05" H 800 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 800 2150 50  0000 C CNN
+F 2 "" H 800 2000 50  0001 C CNN
+F 3 "" H 800 2000 50  0001 C CNN
+	1    800  2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L VDD #PWR06
+U 1 1 5B51AADC
+P 800 1250
+F 0 "#PWR06" H 800 1100 50  0001 C CNN
+F 1 "VDD" H 800 1400 50  0000 C CNN
+F 2 "" H 800 1250 50  0001 C CNN
+F 3 "" H 800 1250 50  0001 C CNN
+	1    800  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VSS #PWR07
+U 1 1 5B51AB23
+P 800 1900
+F 0 "#PWR07" H 800 1750 50  0001 C CNN
+F 1 "VSS" H 800 2050 50  0000 C CNN
+F 2 "" H 800 1900 50  0001 C CNN
+F 3 "" H 800 1900 50  0001 C CNN
+	1    800  1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_DPDT_x2-RESCUE-power-supply SW1
+U 1 1 5B51B641
+P 1850 1200
+F 0 "SW1" H 1850 1370 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 1850 1000 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_NKK_G1xJP" H 1850 1200 50  0001 C CNN
+F 3 "" H 1850 1200 50  0001 C CNN
+	1    1850 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_DPDT_x2-RESCUE-power-supply SW1
+U 2 1 5B51B9D0
+P 1850 3050
+F 0 "SW1" H 1850 3220 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 1850 2850 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_NKK_G1xJP" H 1850 3050 50  0001 C CNN
+F 3 "" H 1850 3050 50  0001 C CNN
+	2    1850 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP1 C11
+U 1 1 5B56B873
+P 5800 1700
+F 0 "C11" H 5825 1800 50  0000 L CNN
+F 1 "CP1" H 5825 1600 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D18.0mm_P7.50mm" H 5800 1700 50  0001 C CNN
+F 3 "" H 5800 1700 50  0001 C CNN
+	1    5800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5B56BA67
+P 2800 1400
+F 0 "R1" V 2880 1400 50  0000 C CNN
+F 1 "R" V 2800 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2730 1400 50  0001 C CNN
+F 3 "" H 2800 1400 50  0001 C CNN
+	1    2800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 5B56BC08
+P 2800 1800
+F 0 "D3" H 2800 1900 50  0000 C CNN
+F 1 "LED" H 2800 1700 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 2800 1800 50  0001 C CNN
+F 3 "" H 2800 1800 50  0001 C CNN
+	1    2800 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5B56C4DA
+P 2800 2700
+F 0 "R2" V 2880 2700 50  0000 C CNN
+F 1 "R" V 2800 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2730 2700 50  0001 C CNN
+F 3 "" H 2800 2700 50  0001 C CNN
+	1    2800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D4
+U 1 1 5B56C4E0
+P 2800 2350
+F 0 "D4" H 2800 2450 50  0000 C CNN
+F 1 "LED" H 2800 2250 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 2800 2350 50  0001 C CNN
+F 3 "" H 2800 2350 50  0001 C CNN
+	1    2800 2350
+	0    -1   -1   0   
+$EndComp
+Text Label 9300 1500 0    60   ~ 0
+V12out
+$Comp
+L D D1
+U 1 1 5B56D8A7
+P 2500 1700
+F 0 "D1" H 2500 1800 50  0000 C CNN
+F 1 "D" H 2500 1600 50  0000 C CNN
+F 2 "Diodes_THT:D_5W_P12.70mm_Horizontal" H 2500 1700 50  0001 C CNN
+F 3 "" H 2500 1700 50  0001 C CNN
+	1    2500 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L D D2
+U 1 1 5B56D970
+P 2500 2600
+F 0 "D2" H 2500 2700 50  0000 C CNN
+F 1 "D" H 2500 2500 50  0000 C CNN
+F 2 "Diodes_THT:D_5W_P12.70mm_Horizontal" H 2500 2600 50  0001 C CNN
+F 3 "" H 2500 2600 50  0001 C CNN
+	1    2500 2600
+	0    1    1    0   
+$EndComp
+Text Label 1500 1100 2    60   ~ 0
+V7.4in
+$Comp
+L D D5
+U 1 1 5B56E40E
+P 6050 1700
+F 0 "D5" H 6050 1800 50  0000 C CNN
+F 1 "D" H 6050 1600 50  0000 C CNN
+F 2 "Diodes_THT:D_5W_P12.70mm_Horizontal" H 6050 1700 50  0001 C CNN
+F 3 "" H 6050 1700 50  0001 C CNN
+	1    6050 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L D D6
+U 1 1 5B56E857
+P 7150 1650
+F 0 "D6" H 7150 1750 50  0000 C CNN
+F 1 "D" H 7150 1550 50  0000 C CNN
+F 2 "Diodes_THT:D_5W_P12.70mm_Horizontal" H 7150 1650 50  0001 C CNN
+F 3 "" H 7150 1650 50  0001 C CNN
+	1    7150 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L D D7
+U 1 1 5B56E926
+P 8400 1650
+F 0 "D7" H 8400 1750 50  0000 C CNN
+F 1 "D" H 8400 1550 50  0000 C CNN
+F 2 "Diodes_THT:D_5W_P12.70mm_Horizontal" H 8400 1650 50  0001 C CNN
+F 3 "" H 8400 1650 50  0001 C CNN
+	1    8400 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L D D8
+U 1 1 5B56EE54
+P 4400 1650
+F 0 "D8" H 4400 1750 50  0000 C CNN
+F 1 "D" H 4400 1550 50  0000 C CNN
+F 2 "Diodes_THT:D_5W_P12.70mm_Horizontal" H 4400 1650 50  0001 C CNN
+F 3 "" H 4400 1650 50  0001 C CNN
+	1    4400 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L D D9
+U 1 1 5B56F01E
+P 4400 2650
+F 0 "D9" H 4400 2750 50  0000 C CNN
+F 1 "D" H 4400 2550 50  0000 C CNN
+F 2 "Diodes_THT:D_5W_P12.70mm_Horizontal" H 4400 2650 50  0001 C CNN
+F 3 "" H 4400 2650 50  0001 C CNN
+	1    4400 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L CP1 C5
+U 1 1 5B5138E5
+P 4100 1750
+F 0 "C5" H 4125 1850 50  0000 L CNN
+F 1 "CP1" H 4125 1650 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-C_EIA-6032-28_Hand" H 4100 1750 50  0001 C CNN
+F 3 "" H 4100 1750 50  0001 C CNN
+	1    4100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2500 2800 2550
+Connection ~ 4400 3050
+Wire Wire Line
+	4400 3050 4400 2800
+Connection ~ 4400 2150
+Wire Wire Line
+	4400 1800 4400 2500
+Connection ~ 4400 1200
+Wire Wire Line
+	4400 1200 4400 1500
+Connection ~ 8400 2150
+Wire Wire Line
+	8400 2150 8400 1800
+Connection ~ 8400 1200
+Wire Wire Line
+	8400 1500 8400 1200
+Connection ~ 7150 2150
+Wire Wire Line
+	7150 2150 7150 1800
+Connection ~ 7150 1200
+Wire Wire Line
+	7150 1500 7150 1200
+Connection ~ 6050 2150
+Wire Wire Line
+	6050 2150 6050 1850
+Connection ~ 6050 1200
+Wire Wire Line
+	6050 1200 6050 1550
+Wire Wire Line
+	1500 1100 1650 1100
+Wire Wire Line
+	1600 1100 1600 750 
+Connection ~ 1600 1100
+Connection ~ 2500 3050
+Wire Wire Line
+	2500 2750 2500 3050
+Connection ~ 2500 2150
+Wire Wire Line
+	2500 1850 2500 2450
+Connection ~ 2500 1200
+Wire Wire Line
+	2500 1550 2500 1200
+Connection ~ 7500 1200
+Wire Wire Line
+	9100 1500 9900 1500
+Wire Wire Line
+	9100 900  9100 1500
+Wire Wire Line
+	7500 900  9100 900 
+Wire Wire Line
+	7500 1200 7500 900 
+Connection ~ 2800 3050
+Wire Wire Line
+	2800 3050 2800 2850
+Connection ~ 2800 2150
+Wire Wire Line
+	2800 1950 2800 2200
+Wire Wire Line
+	2800 1550 2800 1650
+Connection ~ 2800 1200
+Wire Wire Line
+	2800 1200 2800 1250
+Connection ~ 5800 2150
+Wire Wire Line
+	5800 2150 5800 1850
+Connection ~ 5800 1200
+Wire Wire Line
+	5800 1550 5800 1200
+Wire Wire Line
+	800  1900 800  2000
+Wire Wire Line
+	800  1250 800  1350
+Connection ~ 1600 3150
+Wire Wire Line
+	1600 3450 1600 3150
+Connection ~ 8650 1200
+Wire Wire Line
+	8650 1200 8650 1550
+Connection ~ 7650 1200
+Wire Wire Line
+	7650 1200 7650 1550
+Connection ~ 7400 1200
+Wire Wire Line
+	7400 1200 7400 1550
+Connection ~ 6400 1200
+Wire Wire Line
+	6400 1200 6400 1550
+Connection ~ 6400 2150
+Wire Wire Line
+	6400 2150 6400 1850
+Connection ~ 7400 2150
+Wire Wire Line
+	7400 2150 7400 1850
+Connection ~ 7650 2150
+Wire Wire Line
+	7650 2150 7650 1850
+Connection ~ 8650 2150
+Wire Wire Line
+	8650 2150 8650 1850
+Wire Wire Line
+	9000 2050 9900 2050
+Wire Wire Line
+	9000 1200 9000 2050
+Wire Wire Line
+	8300 1200 9000 1200
+Connection ~ 8000 2150
+Wire Wire Line
+	8000 2150 8000 1500
+Wire Wire Line
+	7050 1200 7700 1200
+Connection ~ 6750 2150
+Wire Wire Line
+	6750 2150 6750 1500
+Connection ~ 5650 2150
+Wire Wire Line
+	5650 2150 5650 1400
+Wire Wire Line
+	5650 1400 5600 1400
+Connection ~ 9200 2150
+Connection ~ 9200 2250
+Wire Wire Line
+	9200 2850 9900 2850
+Wire Wire Line
+	9200 2250 9900 2250
+Wire Wire Line
+	9200 1700 9900 1700
+Connection ~ 9200 1700
+Wire Wire Line
+	9200 1200 9200 2850
+Wire Wire Line
+	9200 1200 9900 1200
+Connection ~ 6200 1200
+Wire Wire Line
+	6200 1000 9900 1000
+Wire Wire Line
+	6200 1200 6200 1000
+Wire Wire Line
+	5600 1200 6450 1200
+Wire Wire Line
+	4550 2650 9900 2650
+Connection ~ 4100 3050
+Connection ~ 4550 1200
+Wire Wire Line
+	4550 1200 4550 2650
+Connection ~ 4100 1200
+Connection ~ 4650 2150
+Wire Wire Line
+	4650 2150 4650 1400
+Wire Wire Line
+	4650 1400 4700 1400
+Connection ~ 1700 2150
+Wire Wire Line
+	1700 2150 1700 2300
+Connection ~ 3100 3050
+Wire Wire Line
+	3100 3050 3100 2600
+Connection ~ 3100 1200
+Wire Wire Line
+	3100 1200 3100 1600
+Connection ~ 3100 2150
+Wire Wire Line
+	3100 1900 3100 2300
+Connection ~ 3350 3050
+Wire Wire Line
+	3350 3050 3350 2600
+Wire Wire Line
+	2050 3050 3450 3050
+Wire Wire Line
+	1500 3150 1650 3150
+Connection ~ 3750 2150
+Wire Wire Line
+	4100 3050 4100 2600
+Wire Wire Line
+	4050 3050 9900 3050
+Wire Wire Line
+	4100 1200 4100 1600
+Wire Wire Line
+	4050 1200 4700 1200
+Wire Wire Line
+	3750 1500 3750 2750
+Connection ~ 3350 1200
+Wire Wire Line
+	3350 1200 3350 1600
+Wire Wire Line
+	2050 1200 3450 1200
+Wire Wire Line
+	1500 2150 9200 2150
+Connection ~ 4100 2150
+Connection ~ 3350 2150
+Wire Wire Line
+	3350 1900 3350 2300
+Wire Wire Line
+	4100 1900 4100 2300
+$Comp
+L Conn2 U6
+U 1 1 5B576DED
+P 10250 1100
+F 0 "U6" H 10150 850 60  0000 C CNN
+F 1 "Conn2" H 10250 1350 60  0000 C CNN
+F 2 "Hanaro:Connector.2pin" H 10250 1150 60  0001 C CNN
+F 3 "" H 10250 1150 60  0001 C CNN
+	1    10250 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn3 U9
+U 1 1 5B576ECE
+P 10250 2850
+F 0 "U9" H 10150 2500 60  0000 C CNN
+F 1 "Conn3" H 10250 3200 60  0000 C CNN
+F 2 "Hanaro:Connector.3pin" H 10250 3000 60  0001 C CNN
+F 3 "" H 10250 3000 60  0001 C CNN
+	1    10250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn2 U7
+U 1 1 5B5770A3
+P 10250 1600
+F 0 "U7" H 10150 1350 60  0000 C CNN
+F 1 "Conn2" H 10250 1850 60  0000 C CNN
+F 2 "Hanaro:Connector.2pin" H 10250 1650 60  0001 C CNN
+F 3 "" H 10250 1650 60  0001 C CNN
+	1    10250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn2 U8
+U 1 1 5B57712C
+P 10250 2150
+F 0 "U8" H 10150 1900 60  0000 C CNN
+F 1 "Conn2" H 10250 2400 60  0000 C CNN
+F 2 "Hanaro:Connector.2pin" H 10250 2200 60  0001 C CNN
+F 3 "" H 10250 2200 60  0001 C CNN
+	1    10250 2150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
